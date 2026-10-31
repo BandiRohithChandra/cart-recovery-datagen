@@ -133,3 +133,21 @@ One row per planned message for a cart (ID follows MSG-<cart-id>-NN). The templa
 | subject | string | optional | text | no | required for email, null for sms |
 | body | string | yes | text rendered with first_name and product_name | no | non-empty; SMS at most 160 characters |
 | created_at | timestamp | yes | UTC | no | at or after the cart's abandoned_at |
+
+
+## SendAttempt
+One row per attempt to send a planned message, including attempts that were suppressed. Never edited; what happens after a send is recorded in SendEvent.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| send_id | string | yes | SEND-2026-000001 | PK | matches ^SEND-\d{4}-\d{6}$, immutable |
+| message_id | string | yes | existing MSG- id | yes | FK to MessageTemplate; one attempt per message |
+| scheduled_at | timestamp | yes | UTC | no | equals the cart's abandoned_at + the message's delay_minutes |
+| attempted_at | timestamp | yes | UTC | no | at or after scheduled_at |
+| decision | enum | yes | sent, suppressed | no | one of the allowed values |
+| suppression_reason | enum | optional | opted_out, no_consent_record, frequency_cap_24h, frequency_cap_7d, purchased_before_send | no | required when decision is suppressed, null when sent |
+| consent_id_checked | string | optional | existing CON- id | no | FK to Consent; the consent row in force at attempted_at, null if none exists |
+
+Rules:
+- A send is valid only if the consent row in force for that channel at attempted_at is opt_in, and no frequency cap is breached.
+- The injected anomaly "message sent after opt-out" produces a sent row that breaks this rule, and it is recorded in ground_truth.csv.
