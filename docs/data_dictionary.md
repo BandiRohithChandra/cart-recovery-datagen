@@ -78,3 +78,20 @@ One row per product in a cart (1:N from Cart).
 | unit_price | decimal(10,2) | yes | currency units | no | greater than 0 |
 | quantity | integer | yes | 1 to 10 | no | current quantity after any updates |
 | line_total | decimal(12,2) | yes | currency units | no | equals unit_price x quantity |
+
+
+## CartEvent
+Supporting table (not in the statement's core entity list). Append-only history of everything that happens to a cart, so nothing is overwritten.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| event_id | string | yes | CEV-000001 | PK | matches ^CEV-\d{6}$, immutable |
+| cart_id | string | yes | existing CART- id | no | FK to Cart |
+| session_id | string | yes | the session where the event happened | no | FK to Session; may differ from the cart's creating session (multiple devices) |
+| event_type | enum | yes | cart_created, line_added, quantity_updated, line_removed, abandoned, recovered, purchased | no | one of the allowed values |
+| cart_line_id | string | optional | existing CLN- id | no | required for line events, null otherwise |
+| old_quantity | integer | optional | 1 to 10 | no | only for quantity_updated |
+| new_quantity | integer | optional | 1 to 10 | no | only for quantity_updated; must differ from old_quantity |
+| occurred_at | timestamp | yes | UTC | no | non-decreasing per cart |
+
+Lifecycle rule: after a purchased event, no abandoned event is valid. The injected anomaly "cart considered abandoned after purchase" breaks this on purpose and is recorded in ground_truth.csv.
