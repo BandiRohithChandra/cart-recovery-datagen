@@ -47,6 +47,7 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 - Recovery purchases happen in a new session, on a different device from the cart's session 60% of the time when the customer has another device.
 - About 2% of orders are cancelled; attribution only considers placed orders.
 - Follow-up events (sends, purchases) may fall after 2026-09-30. The data period applies to cart creation.
+- A touch counts for any cart of the same customer, not only the cart that was messaged. It must be at least 1 minute and at most 7 days before the order.
 
 ## 9. Derived values
 - line_total = unit_price x quantity.
