@@ -169,3 +169,24 @@ Rules:
 - Each sent attempt has exactly one delivered or bounced event.
 - opened and clicked events are only valid after a delivered event, and never after a bounced one.
 - A send can have several opened or clicked events, and attribution uses the earliest qualifying one.
+
+
+
+## Order
+One row per purchase. Each order comes from exactly one cart, and each cart has at most one order (1:1, optional from Cart).
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| order_id | string | yes | ORD-2026-000001 | PK | matches ^ORD-\d{4}-\d{6}$, immutable |
+| customer_id | string | yes | existing CUS- id | no | FK to Customer; must match the cart's customer |
+| cart_id | string | yes | existing CART- id | yes | FK to Cart; one order per cart |
+| session_id | string | yes | existing SES- id | no | FK to Session; the session where the purchase happened, which may be on a different device from the cart's session |
+| currency | enum | yes | INR, SAR, AED, USD | no | equals the cart's currency |
+| order_total | decimal(12,2) | yes | currency units | no | equals the cart's total at purchase time (sum of its line totals) |
+| status | enum | yes | placed, cancelled | no | one of the allowed values |
+| placed_at | timestamp | yes | UTC | no | after the cart's created_at; equals the cart's purchased event time |
+
+Rules:
+- A cart with an order must have a purchased or recovered CartEvent at placed_at.
+- An order is a late purchase when it is placed after the attribution window has ended for every send to that cart. These are valid orders that get no attribution.
+- Order lines are not stored separately. They are the cart's lines at purchase time.
