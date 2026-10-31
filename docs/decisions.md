@@ -20,6 +20,7 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 - A cart is abandoned when it has had no activity for 60 minutes and has no order.
 - abandoned_at = last_activity_at + 60 minutes.
 - Carts with activity inside the window stay active (this is the boundary case).
+- Carts that are not abandoned are bought directly, 1 to 59 minutes after their last activity (most within 30 minutes, some near the 60-minute boundary). The number of abandoned carts is exactly round(n_carts x abandon_rate).
 
 ## 5. Consent and suppression
 - Consent is per channel and stored as append-only events with effective dates.

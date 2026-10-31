@@ -59,7 +59,7 @@ One row per cart, holding its current state. The full history lives in CartEvent
 | currency | enum | yes | INR, SAR, AED, USD | no | matches the customer's country |
 | status | enum | yes | active, abandoned, recovered, purchased | no | derived from CartEvent history |
 | created_at | timestamp | yes | UTC | no | at or after session.started_at |
-| last_activity_at | timestamp | yes | UTC | no | equals the latest CartEvent time |
+| last_activity_at | timestamp | yes | UTC | no | equals the latest cart-editing CartEvent time (cart_created, line_added, quantity_updated, line_removed); purchased, abandoned and recovered events do not change it |
 | abandoned_at | timestamp | optional | last_activity_at + 60 minutes | no | null unless abandoned; never after a purchase |
 | cart_total | decimal(12,2) | yes | currency units | no | equals the sum of its CartLine line_total values |
 
