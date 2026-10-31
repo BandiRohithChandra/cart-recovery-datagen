@@ -1,0 +1,198 @@
+ground_truth_id,issue_type,table_name,record_id,related_id,expected_decision,detail
+GT-000001,message_after_opt_out,send_attempts,SEND-2026-000314,CON-004422,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000002,message_after_opt_out,send_attempts,SEND-2026-000382,CON-006225,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000003,message_after_opt_out,send_attempts,SEND-2026-000686,CON-010820,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000004,message_after_opt_out,send_attempts,SEND-2026-001090,CON-004674,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000005,message_after_opt_out,send_attempts,SEND-2026-001352,CON-020604,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000006,message_after_opt_out,send_attempts,SEND-2026-001370,CON-023066,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000007,message_after_opt_out,send_attempts,SEND-2026-001442,CON-012631,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000008,message_after_opt_out,send_attempts,SEND-2026-001768,CON-023178,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000009,message_after_opt_out,send_attempts,SEND-2026-002035,CON-011182,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000010,message_after_opt_out,send_attempts,SEND-2026-002256,CON-013685,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000011,message_after_opt_out,send_attempts,SEND-2026-002395,CON-021864,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000012,message_after_opt_out,send_attempts,SEND-2026-002423,CON-008560,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000013,message_after_opt_out,send_attempts,SEND-2026-002520,CON-031272,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000014,message_after_opt_out,send_attempts,SEND-2026-002551,CON-031272,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000015,message_after_opt_out,send_attempts,SEND-2026-002601,CON-026996,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000016,message_after_opt_out,send_attempts,SEND-2026-002663,CON-028191,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000017,message_after_opt_out,send_attempts,SEND-2026-002863,CON-029474,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000018,message_after_opt_out,send_attempts,SEND-2026-003026,CON-029406,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000019,message_after_opt_out,send_attempts,SEND-2026-003230,CON-015249,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000020,message_after_opt_out,send_attempts,SEND-2026-003481,CON-021237,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000021,message_after_opt_out,send_attempts,SEND-2026-003512,CON-015101,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000022,message_after_opt_out,send_attempts,SEND-2026-003847,CON-013379,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000023,message_after_opt_out,send_attempts,SEND-2026-003886,CON-013379,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000024,message_after_opt_out,send_attempts,SEND-2026-003939,CON-001336,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000025,message_after_opt_out,send_attempts,SEND-2026-003985,CON-004068,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000026,message_after_opt_out,send_attempts,SEND-2026-004091,CON-026127,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000027,message_after_opt_out,send_attempts,SEND-2026-004424,CON-022220,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000028,message_after_opt_out,send_attempts,SEND-2026-004634,CON-016187,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000029,message_after_opt_out,send_attempts,SEND-2026-004701,CON-014761,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000030,message_after_opt_out,send_attempts,SEND-2026-004959,CON-008268,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000031,message_after_opt_out,send_attempts,SEND-2026-004970,CON-027837,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000032,message_after_opt_out,send_attempts,SEND-2026-005600,CON-015800,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000033,message_after_opt_out,send_attempts,SEND-2026-005736,CON-007522,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000034,message_after_opt_out,send_attempts,SEND-2026-005935,CON-008538,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000035,message_after_opt_out,send_attempts,SEND-2026-005963,CON-024851,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000036,message_after_opt_out,send_attempts,SEND-2026-006430,CON-023655,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000037,message_after_opt_out,send_attempts,SEND-2026-006494,CON-003811,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000038,message_after_opt_out,send_attempts,SEND-2026-006967,CON-010793,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000039,message_after_opt_out,send_attempts,SEND-2026-007172,CON-016054,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000040,message_after_opt_out,send_attempts,SEND-2026-007522,CON-013712,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000041,message_after_opt_out,send_attempts,SEND-2026-007613,CON-017942,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000042,message_after_opt_out,send_attempts,SEND-2026-007726,CON-002083,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000043,message_after_opt_out,send_attempts,SEND-2026-008217,CON-022792,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000044,message_after_opt_out,send_attempts,SEND-2026-008279,CON-022792,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000045,message_after_opt_out,send_attempts,SEND-2026-008714,CON-008941,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000046,message_after_opt_out,send_attempts,SEND-2026-009030,CON-029367,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000047,message_after_opt_out,send_attempts,SEND-2026-009064,CON-002226,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000048,message_after_opt_out,send_attempts,SEND-2026-009466,CON-026384,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000049,message_after_opt_out,send_attempts,SEND-2026-009586,CON-007602,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000050,message_after_opt_out,send_attempts,SEND-2026-009798,CON-003987,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000051,abandoned_after_purchase,cart_events,CEV-210467,CART-2026-000330,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000052,abandoned_after_purchase,cart_events,CEV-210468,CART-2026-001589,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000053,abandoned_after_purchase,cart_events,CEV-210469,CART-2026-004159,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000054,abandoned_after_purchase,cart_events,CEV-210470,CART-2026-004469,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000055,abandoned_after_purchase,cart_events,CEV-210471,CART-2026-010891,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000056,abandoned_after_purchase,cart_events,CEV-210472,CART-2026-011603,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000057,abandoned_after_purchase,cart_events,CEV-210473,CART-2026-012285,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000058,abandoned_after_purchase,cart_events,CEV-210474,CART-2026-017262,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000059,abandoned_after_purchase,cart_events,CEV-210475,CART-2026-017289,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000060,abandoned_after_purchase,cart_events,CEV-210476,CART-2026-017557,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000061,abandoned_after_purchase,cart_events,CEV-210477,CART-2026-017619,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000062,abandoned_after_purchase,cart_events,CEV-210478,CART-2026-017751,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000063,abandoned_after_purchase,cart_events,CEV-210479,CART-2026-018536,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000064,abandoned_after_purchase,cart_events,CEV-210480,CART-2026-019095,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000065,abandoned_after_purchase,cart_events,CEV-210481,CART-2026-019335,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000066,abandoned_after_purchase,cart_events,CEV-210482,CART-2026-019572,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000067,abandoned_after_purchase,cart_events,CEV-210483,CART-2026-020881,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000068,abandoned_after_purchase,cart_events,CEV-210484,CART-2026-023273,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000069,abandoned_after_purchase,cart_events,CEV-210485,CART-2026-027200,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000070,abandoned_after_purchase,cart_events,CEV-210486,CART-2026-029994,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000071,abandoned_after_purchase,cart_events,CEV-210487,CART-2026-030140,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000072,abandoned_after_purchase,cart_events,CEV-210488,CART-2026-033545,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000073,abandoned_after_purchase,cart_events,CEV-210489,CART-2026-035522,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000074,abandoned_after_purchase,cart_events,CEV-210490,CART-2026-036166,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000075,abandoned_after_purchase,cart_events,CEV-210491,CART-2026-036278,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000076,abandoned_after_purchase,cart_events,CEV-210492,CART-2026-037541,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000077,abandoned_after_purchase,cart_events,CEV-210493,CART-2026-037848,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000078,abandoned_after_purchase,cart_events,CEV-210494,CART-2026-038959,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000079,abandoned_after_purchase,cart_events,CEV-210495,CART-2026-039503,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000080,abandoned_after_purchase,cart_events,CEV-210496,CART-2026-039937,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000081,abandoned_after_purchase,cart_events,CEV-210497,CART-2026-040372,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000082,abandoned_after_purchase,cart_events,CEV-210498,CART-2026-040401,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000083,abandoned_after_purchase,cart_events,CEV-210499,CART-2026-040451,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000084,abandoned_after_purchase,cart_events,CEV-210500,CART-2026-041250,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000085,abandoned_after_purchase,cart_events,CEV-210501,CART-2026-041889,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000086,abandoned_after_purchase,cart_events,CEV-210502,CART-2026-044638,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000087,abandoned_after_purchase,cart_events,CEV-210503,CART-2026-044774,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000088,abandoned_after_purchase,cart_events,CEV-210504,CART-2026-045278,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000089,abandoned_after_purchase,cart_events,CEV-210505,CART-2026-045502,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000090,abandoned_after_purchase,cart_events,CEV-210506,CART-2026-045524,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000091,abandoned_after_purchase,cart_events,CEV-210507,CART-2026-046138,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000092,abandoned_after_purchase,cart_events,CEV-210508,CART-2026-046456,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000093,abandoned_after_purchase,cart_events,CEV-210509,CART-2026-047746,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000094,abandoned_after_purchase,cart_events,CEV-210510,CART-2026-048681,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000095,abandoned_after_purchase,cart_events,CEV-210511,CART-2026-049023,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000096,abandoned_after_purchase,cart_events,CEV-210512,CART-2026-049241,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000097,abandoned_after_purchase,cart_events,CEV-210513,CART-2026-049575,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000098,abandoned_after_purchase,cart_events,CEV-210514,CART-2026-049757,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000099,abandoned_after_purchase,cart_events,CEV-210515,CART-2026-049853,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000100,abandoned_after_purchase,cart_events,CEV-210516,CART-2026-049860,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000101,attribution_double_count,attributions,ATR-2026-000220,ORD-2026-001887,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000102,attribution_double_count,attributions,ATR-2026-000221,ORD-2026-002288,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000103,attribution_double_count,attributions,ATR-2026-000222,ORD-2026-002606,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000104,attribution_double_count,attributions,ATR-2026-000223,ORD-2026-003032,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000105,attribution_double_count,attributions,ATR-2026-000224,ORD-2026-003212,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000106,attribution_double_count,attributions,ATR-2026-000225,ORD-2026-004068,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000107,attribution_double_count,attributions,ATR-2026-000226,ORD-2026-004680,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000108,attribution_double_count,attributions,ATR-2026-000227,ORD-2026-008203,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000109,attribution_double_count,attributions,ATR-2026-000228,ORD-2026-009296,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000110,attribution_double_count,attributions,ATR-2026-000229,ORD-2026-009717,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000111,attribution_double_count,attributions,ATR-2026-000230,ORD-2026-011130,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000112,attribution_double_count,attributions,ATR-2026-000231,ORD-2026-011654,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000113,attribution_double_count,attributions,ATR-2026-000232,ORD-2026-012263,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000114,attribution_double_count,attributions,ATR-2026-000233,ORD-2026-012578,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000115,attribution_double_count,attributions,ATR-2026-000234,ORD-2026-012995,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000116,attribution_double_count,attributions,ATR-2026-000235,ORD-2026-014585,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000117,attribution_double_count,attributions,ATR-2026-000236,ORD-2026-015569,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000118,attribution_double_count,attributions,ATR-2026-000237,ORD-2026-016219,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000119,attribution_double_count,attributions,ATR-2026-000238,ORD-2026-016262,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000120,attribution_double_count,attributions,ATR-2026-000239,ORD-2026-016289,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000121,attribution_double_count,attributions,ATR-2026-000240,ORD-2026-016716,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000122,attribution_double_count,attributions,ATR-2026-000241,ORD-2026-018032,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000123,attribution_double_count,attributions,ATR-2026-000242,ORD-2026-018660,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000124,attribution_double_count,attributions,ATR-2026-000243,ORD-2026-018900,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000125,attribution_double_count,attributions,ATR-2026-000244,ORD-2026-020063,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000126,attribution_double_count,attributions,ATR-2026-000245,ORD-2026-020172,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000127,attribution_double_count,attributions,ATR-2026-000246,ORD-2026-020618,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000128,attribution_double_count,attributions,ATR-2026-000247,ORD-2026-021326,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000129,attribution_double_count,attributions,ATR-2026-000248,ORD-2026-022286,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000130,attribution_double_count,attributions,ATR-2026-000249,ORD-2026-022597,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000131,attribution_double_count,attributions,ATR-2026-000250,ORD-2026-022810,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000132,attribution_double_count,attributions,ATR-2026-000251,ORD-2026-023128,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000133,attribution_double_count,attributions,ATR-2026-000252,ORD-2026-023430,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000134,attribution_double_count,attributions,ATR-2026-000253,ORD-2026-023719,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000135,attribution_double_count,attributions,ATR-2026-000254,ORD-2026-023911,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000136,attribution_double_count,attributions,ATR-2026-000255,ORD-2026-024436,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000137,attribution_double_count,attributions,ATR-2026-000256,ORD-2026-024437,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000138,attribution_double_count,attributions,ATR-2026-000257,ORD-2026-025531,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000139,attribution_double_count,attributions,ATR-2026-000258,ORD-2026-025651,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000140,attribution_double_count,attributions,ATR-2026-000259,ORD-2026-025779,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000141,attribution_double_count,attributions,ATR-2026-000260,ORD-2026-026689,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000142,attribution_double_count,attributions,ATR-2026-000261,ORD-2026-027938,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000143,attribution_double_count,attributions,ATR-2026-000262,ORD-2026-028382,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000144,attribution_double_count,attributions,ATR-2026-000263,ORD-2026-028956,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000145,attribution_double_count,attributions,ATR-2026-000264,ORD-2026-029202,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000146,attribution_double_count,attributions,ATR-2026-000265,ORD-2026-029241,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000147,attribution_double_count,attributions,ATR-2026-000266,ORD-2026-029393,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000148,stale_cart_total,carts,CART-2026-001912,CEV-006106,cart_total = 42.70,cart_total still reflects the quantity before the update
+GT-000149,stale_cart_total,carts,CART-2026-002121,CEV-006767,cart_total = 2714.00,cart_total still reflects the quantity before the update
+GT-000150,stale_cart_total,carts,CART-2026-002868,CEV-009161,cart_total = 7745.00,cart_total still reflects the quantity before the update
+GT-000151,stale_cart_total,carts,CART-2026-003765,CEV-012055,cart_total = 114.55,cart_total still reflects the quantity before the update
+GT-000152,stale_cart_total,carts,CART-2026-005021,CEV-016050,cart_total = 2607.00,cart_total still reflects the quantity before the update
+GT-000153,stale_cart_total,carts,CART-2026-005079,CEV-016227,cart_total = 174.00,cart_total still reflects the quantity before the update
+GT-000154,stale_cart_total,carts,CART-2026-005481,CEV-017482,cart_total = 1517.00,cart_total still reflects the quantity before the update
+GT-000155,stale_cart_total,carts,CART-2026-005878,CEV-018735,cart_total = 9709.00,cart_total still reflects the quantity before the update
+GT-000156,stale_cart_total,carts,CART-2026-007508,CEV-023965,cart_total = 80.80,cart_total still reflects the quantity before the update
+GT-000157,stale_cart_total,carts,CART-2026-010711,CEV-034180,cart_total = 185.22,cart_total still reflects the quantity before the update
+GT-000158,stale_cart_total,carts,CART-2026-011020,CEV-035161,cart_total = 5184.00,cart_total still reflects the quantity before the update
+GT-000159,stale_cart_total,carts,CART-2026-011892,CEV-037918,cart_total = 13653.00,cart_total still reflects the quantity before the update
+GT-000160,stale_cart_total,carts,CART-2026-014034,CEV-044800,cart_total = 2345.00,cart_total still reflects the quantity before the update
+GT-000161,stale_cart_total,carts,CART-2026-014193,CEV-045319,cart_total = 2075.00,cart_total still reflects the quantity before the update
+GT-000162,stale_cart_total,carts,CART-2026-014628,CEV-046704,cart_total = 1347.00,cart_total still reflects the quantity before the update
+GT-000163,stale_cart_total,carts,CART-2026-014791,CEV-047225,cart_total = 259.00,cart_total still reflects the quantity before the update
+GT-000164,stale_cart_total,carts,CART-2026-015664,CEV-049955,cart_total = 2407.00,cart_total still reflects the quantity before the update
+GT-000165,stale_cart_total,carts,CART-2026-015833,CEV-050503,cart_total = 1875.00,cart_total still reflects the quantity before the update
+GT-000166,stale_cart_total,carts,CART-2026-016190,CEV-051601,cart_total = 5991.00,cart_total still reflects the quantity before the update
+GT-000167,stale_cart_total,carts,CART-2026-018792,CEV-059882,cart_total = 2494.00,cart_total still reflects the quantity before the update
+GT-000168,stale_cart_total,carts,CART-2026-021938,CEV-069873,cart_total = 34.12,cart_total still reflects the quantity before the update
+GT-000169,stale_cart_total,carts,CART-2026-023394,CEV-074545,cart_total = 231.96,cart_total still reflects the quantity before the update
+GT-000170,stale_cart_total,carts,CART-2026-023985,CEV-076397,cart_total = 309.00,cart_total still reflects the quantity before the update
+GT-000171,stale_cart_total,carts,CART-2026-024774,CEV-078881,cart_total = 17035.00,cart_total still reflects the quantity before the update
+GT-000172,stale_cart_total,carts,CART-2026-027798,CEV-088378,cart_total = 116.80,cart_total still reflects the quantity before the update
+GT-000173,stale_cart_total,carts,CART-2026-028638,CEV-090975,cart_total = 3638.00,cart_total still reflects the quantity before the update
+GT-000174,stale_cart_total,carts,CART-2026-029389,CEV-093320,cart_total = 21.56,cart_total still reflects the quantity before the update
+GT-000175,stale_cart_total,carts,CART-2026-029472,CEV-093590,cart_total = 182.68,cart_total still reflects the quantity before the update
+GT-000176,stale_cart_total,carts,CART-2026-031682,CEV-100558,cart_total = 9.10,cart_total still reflects the quantity before the update
+GT-000177,stale_cart_total,carts,CART-2026-031870,CEV-101157,cart_total = 597.66,cart_total still reflects the quantity before the update
+GT-000178,stale_cart_total,carts,CART-2026-033260,CEV-105575,cart_total = 382.12,cart_total still reflects the quantity before the update
+GT-000179,stale_cart_total,carts,CART-2026-036486,CEV-115771,cart_total = 4.67,cart_total still reflects the quantity before the update
+GT-000180,stale_cart_total,carts,CART-2026-036774,CEV-116707,cart_total = 9273.00,cart_total still reflects the quantity before the update
+GT-000181,stale_cart_total,carts,CART-2026-037076,CEV-117650,cart_total = 88.44,cart_total still reflects the quantity before the update
+GT-000182,stale_cart_total,carts,CART-2026-037481,CEV-118963,cart_total = 35.84,cart_total still reflects the quantity before the update
+GT-000183,stale_cart_total,carts,CART-2026-037591,CEV-119329,cart_total = 3605.00,cart_total still reflects the quantity before the update
+GT-000184,stale_cart_total,carts,CART-2026-037947,CEV-120461,cart_total = 319.16,cart_total still reflects the quantity before the update
+GT-000185,stale_cart_total,carts,CART-2026-038475,CEV-122145,cart_total = 324.26,cart_total still reflects the quantity before the update
+GT-000186,stale_cart_total,carts,CART-2026-042046,CEV-133601,cart_total = 2546.00,cart_total still reflects the quantity before the update
+GT-000187,stale_cart_total,carts,CART-2026-043378,CEV-137804,cart_total = 699.00,cart_total still reflects the quantity before the update
+GT-000188,stale_cart_total,carts,CART-2026-044648,CEV-141906,cart_total = 9245.00,cart_total still reflects the quantity before the update
+GT-000189,stale_cart_total,carts,CART-2026-046280,CEV-147061,cart_total = 3396.00,cart_total still reflects the quantity before the update
+GT-000190,stale_cart_total,carts,CART-2026-046349,CEV-147272,cart_total = 698.00,cart_total still reflects the quantity before the update
+GT-000191,stale_cart_total,carts,CART-2026-046444,CEV-147570,cart_total = 70.32,cart_total still reflects the quantity before the update
+GT-000192,stale_cart_total,carts,CART-2026-047290,CEV-150313,cart_total = 264.16,cart_total still reflects the quantity before the update
+GT-000193,stale_cart_total,carts,CART-2026-047683,CEV-151532,cart_total = 208.56,cart_total still reflects the quantity before the update
+GT-000194,stale_cart_total,carts,CART-2026-047853,CEV-152065,cart_total = 12758.00,cart_total still reflects the quantity before the update
+GT-000195,stale_cart_total,carts,CART-2026-048144,CEV-152975,cart_total = 166.96,cart_total still reflects the quantity before the update
+GT-000196,stale_cart_total,carts,CART-2026-048685,CEV-154664,cart_total = 50.96,cart_total still reflects the quantity before the update
+GT-000197,stale_cart_total,carts,CART-2026-049455,CEV-157084,cart_total = 1545.00,cart_total still reflects the quantity before the update

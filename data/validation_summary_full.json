@@ -1,0 +1,161 @@
+{
+  "scale": "full",
+  "seed": 20261022,
+  "result": "PASS",
+  "checks": {
+    "primary_keys": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "foreign_keys": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "join_consistency": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "allowed_values": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "required_fields": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "natural_keys_unique": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "date_ordering": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "line_total_reconciles": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "cart_total_reconciles": {
+      "violations": 50,
+      "labelled": 50,
+      "unexpected": 0
+    },
+    "order_total_reconciles": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "cart_event_fields": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "consent_lifecycle": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "cart_status_vs_events": {
+      "violations": 50,
+      "labelled": 50,
+      "unexpected": 0
+    },
+    "order_cart_lifecycle": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "abandonment_rule": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "send_decision_consistency": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "send_consent_in_force": {
+      "violations": 50,
+      "labelled": 50,
+      "unexpected": 0
+    },
+    "frequency_caps": {
+      "violations": 3,
+      "labelled": 3,
+      "unexpected": 0
+    },
+    "no_send_after_purchase": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "attribution_unique_per_order": {
+      "violations": 47,
+      "labelled": 47,
+      "unexpected": 0
+    },
+    "attribution_touch_rules": {
+      "violations": 93,
+      "labelled": 93,
+      "unexpected": 0
+    },
+    "attribution_matches_last_touch": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "attribution_revenue_reconciles": {
+      "violations": 0,
+      "labelled": 0,
+      "unexpected": 0
+    },
+    "attribution_counts_reconcile": {
+      "violations": 1,
+      "labelled": 1,
+      "unexpected": 0
+    }
+  },
+  "detection": {
+    "message_after_opt_out": {
+      "injected": 50,
+      "detected": 50
+    },
+    "abandoned_after_purchase": {
+      "injected": 50,
+      "detected": 50
+    },
+    "attribution_double_count": {
+      "injected": 47,
+      "detected": 47
+    },
+    "stale_cart_total": {
+      "injected": 50,
+      "detected": 50
+    }
+  },
+  "row_counts": {
+    "customers": 20000,
+    "consents": 31779,
+    "sessions": 81704,
+    "campaigns": 20,
+    "carts": 50000,
+    "cart_lines": 98896,
+    "cart_events": 210516,
+    "message_templates": 10000,
+    "send_attempts": 10000,
+    "send_events": 5966,
+    "orders": 31660,
+    "attributions": 266,
+    "ground_truth": 197
+  },
+  "unexpected_examples": []
+}

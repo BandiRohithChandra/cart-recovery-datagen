@@ -1,0 +1,23 @@
+{
+  "scale": "full",
+  "seed": 20261022,
+  "runs": 2,
+  "row_counts": {
+    "customers": 20000,
+    "consents": 31779,
+    "sessions": 81704,
+    "campaigns": 20,
+    "carts": 50000,
+    "cart_lines": 98896,
+    "cart_events": 210516,
+    "message_templates": 10000,
+    "send_attempts": 10000,
+    "send_events": 5966,
+    "orders": 31660,
+    "attributions": 266,
+    "ground_truth": 197
+  },
+  "files_compared": 28,
+  "mismatched_files": [],
+  "result": "PASS"
+}
