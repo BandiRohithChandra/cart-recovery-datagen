@@ -44,6 +44,9 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 - Choose the latest click; if there are no clicks, the latest open; ties go to the lowest send_id.
 - One attribution row per order at most, so revenue is never double-counted.
 - Late purchases (outside the window) are valid orders with no attribution.
+- Recovery purchases happen in a new session, on a different device from the cart's session 60% of the time when the customer has another device.
+- About 2% of orders are cancelled; attribution only considers placed orders.
+- Follow-up events (sends, purchases) may fall after 2026-09-30. The data period applies to cart creation.
 
 ## 9. Derived values
 - line_total = unit_price x quantity.

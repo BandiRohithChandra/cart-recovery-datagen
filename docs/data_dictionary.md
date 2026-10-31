@@ -63,7 +63,7 @@ One row per cart, holding its current state. The full history lives in CartEvent
 | abandoned_at | timestamp | optional | last_activity_at + 60 minutes | no | null unless abandoned; never after a purchase |
 | cart_total | decimal(12,2) | yes | currency units | no | equals the sum of its CartLine line_total values |
 
-Lifecycle: active -> abandoned -> recovered, or active -> purchased. A cart that is abandoned and later bought after a campaign is "recovered". A cart bought without ever being abandoned is "purchased".
+Lifecycle: active -> abandoned -> recovered, or active -> purchased. A cart that is abandoned and later bought, whether or not any message gets credit, is "recovered"; attribution decides credit separately. A cart bought without ever being abandoned is "purchased".
 
 
 ## CartLine
