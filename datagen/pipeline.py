@@ -4,6 +4,7 @@ import random
 import config
 from datagen.attribution import attribute_orders
 from datagen.campaigns import generate_campaigns, generate_messages
+from datagen.anomalies import inject_anomalies
 from datagen.carts import generate_carts
 from datagen.ids import IdGenerator
 from datagen.lifecycle import apply_abandonment
@@ -29,10 +30,12 @@ def build(scale_name="starter", seed=config.SEED):
     orders = generate_orders(rng, ids, carts, cart_events, sessions, purchase_at)
     attributions = attribute_orders(ids, orders, sends, send_events, messages, carts)
 
-    return {
+    tables = {
         "customers": customers, "consents": consents, "sessions": sessions,
         "carts": carts, "cart_lines": lines, "cart_events": cart_events,
         "campaigns": campaigns, "messages": messages,
         "send_attempts": sends, "send_events": send_events,
         "orders": orders, "attributions": attributions,
     }
+    tables["ground_truth"] = inject_anomalies(rng, ids, scale, tables)
+    return tables

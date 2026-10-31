@@ -64,6 +64,7 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 3. attribution_double_count: a second attribution row for one order across campaigns.
 4. stale_cart_total: a quantity updated without recomputing the cart total.
 - Each anomaly touches only its target rows and is recorded in ground_truth.csv, which is never used as an input to generation or validation of features.
+- Anomaly counts: 3 per type in the starter set and 50 per type in the full set. An injected attribution_double_count row may also break the 7-day window or same-customer rule, because it is a deliberately wrong row. ground_truth is a separate output and is never read by any generator or feature step.
 
 ## 12. ID conventions
 - Given: CUS-000001, CART-2026-000001, CMP-2026-000001, MSG-<cart-id>-01, SEND-2026-000001, ORD-2026-000001.
