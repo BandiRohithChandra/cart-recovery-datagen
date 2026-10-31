@@ -114,3 +114,22 @@ One row per recovery campaign. The rules in force for its sends are stored here 
 | max_sends_per_7d | integer | yes | 3 | no | greater than or equal to max_sends_per_channel_per_24h |
 
 Lifecycle: draft -> active -> completed, or draft/active -> cancelled. SendAttempts may only be created while the campaign is active.
+
+
+
+## MessageTemplate
+One row per planned message for a cart (ID follows MSG-<cart-id>-NN). The template is rendered with the customer's and cart's details, so each row is the personalized message for one cart. Campaign and Cart are both 1:N parents, so no bridge table is needed.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| message_id | string | yes | MSG-CART-2026-000001-01 | PK | matches ^MSG-CART-\d{4}-\d{6}-\d{2}$, immutable |
+| campaign_id | string | yes | existing CMP- id | no | FK to Campaign |
+| cart_id | string | yes | existing CART- id | no | FK to Cart; the cart must be abandoned |
+| sequence | integer | yes | 1 to 3 | no | matches the NN suffix; unique per cart |
+| channel | enum | yes | email, sms | no | one of the allowed values |
+| variant | enum | yes | A, B | no | one of the allowed values (A/B test) |
+| template_code | string | yes | e.g. EMAIL_1H_A, EMAIL_24H_B, SMS_72H_A | no | channel in the code matches channel |
+| delay_minutes | integer | yes | 60, 1440, 4320 | no | send is due this long after abandoned_at |
+| subject | string | optional | text | no | required for email, null for sms |
+| body | string | yes | text rendered with first_name and product_name | no | non-empty; SMS at most 160 characters |
+| created_at | timestamp | yes | UTC | no | at or after the cart's abandoned_at |
