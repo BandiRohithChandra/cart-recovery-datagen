@@ -190,3 +190,27 @@ Rules:
 - A cart with an order must have a purchased or recovered CartEvent at placed_at.
 - An order is a late purchase when it is placed after the attribution window has ended for every send to that cart. These are valid orders that get no attribution.
 - Order lines are not stored separately. They are the cart's lines at purchase time.
+
+
+## Attribution
+One row per attributed order. It links an order to the single send credited for it, using one documented deterministic rule.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| attribution_id | string | yes | ATR-2026-000001 | PK | matches ^ATR-\d{4}-\d{6}$, immutable |
+| order_id | string | yes | existing ORD- id | yes | FK to Order; one attribution per order, so revenue is never double-counted |
+| send_id | string | yes | existing SEND- id | no | FK to SendAttempt; the attempt's decision must be sent |
+| send_event_id | string | yes | existing SEV- id | no | FK to SendEvent; the click or open that earned the credit |
+| touch_type | enum | yes | click, open | no | must match the event_type of send_event_id |
+| lag_minutes | integer | yes | minutes | no | order.placed_at minus the touch's occurred_at; greater than 0 and at most attribution_window_days x 1440 |
+| attributed_revenue | decimal(12,2) | yes | currency units | no | equals order.order_total |
+
+Attribution rule (deterministic, last-touch):
+1. Consider only placed orders that have at least one qualifying touch, meaning a click or open on a sent message to the same customer, occurring before the order and within the attribution window (7 days).
+2. Prefer the latest click. If there are no clicks, use the latest open.
+3. If several touches tie on time, pick the lowest send_id.
+4. Orders with no qualifying touch, including late purchases, get no attribution row.
+
+Reconciliation: the sum of attributed_revenue by campaign must be at most total order revenue, and the number of attribution rows must equal the number of distinct orders attributed.
+
+The injected anomaly "attribution double-counted across campaigns" adds a second row for the same order, which deliberately breaks the order_id uniqueness. It is recorded in ground_truth.csv.
