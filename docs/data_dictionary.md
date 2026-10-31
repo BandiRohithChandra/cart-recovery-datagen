@@ -64,3 +64,17 @@ One row per cart, holding its current state. The full history lives in CartEvent
 | cart_total | decimal(12,2) | yes | currency units | no | equals the sum of its CartLine line_total values |
 
 Lifecycle: active -> abandoned -> recovered, or active -> purchased. A cart that is abandoned and later bought after a campaign is "recovered". A cart bought without ever being abandoned is "purchased".
+
+
+## CartLine
+One row per product in a cart (1:N from Cart).
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| cart_line_id | string | yes | CLN-000001 | PK | matches ^CLN-\d{6}$, immutable |
+| cart_id | string | yes | existing CART- id | no | FK to Cart |
+| product_sku | string | yes | SKU-0001 to SKU-0300 from a synthetic catalog | no | unique within a cart |
+| product_name | string | yes | synthetic catalog name | no | non-empty, used for message personalization |
+| unit_price | decimal(10,2) | yes | currency units | no | greater than 0 |
+| quantity | integer | yes | 1 to 10 | no | current quantity after any updates |
+| line_total | decimal(12,2) | yes | currency units | no | equals unit_price x quantity |
