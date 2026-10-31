@@ -113,7 +113,7 @@ One row per recovery campaign. The rules in force for its sends are stored here 
 | max_sends_per_channel_per_24h | integer | yes | 1 | no | greater than 0 |
 | max_sends_per_7d | integer | yes | 3 | no | greater than or equal to max_sends_per_channel_per_24h |
 
-Lifecycle: draft -> active -> completed, or draft/active -> cancelled. SendAttempts may only be created while the campaign is active.
+Lifecycle: draft -> active -> completed, or draft/active -> cancelled. A campaign covers carts abandoned between start_date and end_date. Its messages may be scheduled up to 72 hours after end_date (the length of the sequence); SendAttempts are not created before start_date or for a draft or cancelled campaign.
 
 
 
