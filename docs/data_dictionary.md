@@ -30,3 +30,18 @@ Append-only history of consent changes. A withdrawal is a new row, and rows are 
 | source | enum | yes | signup, checkout, preference_center, unsubscribe_link, sms_stop | no | sms_stop only for the sms channel |
 
 Lifecycle: for each customer and channel, opt_in and opt_out alternate in order of effective_from. There is no effective_to column, because it is derived from the next event's effective_from.
+
+
+## Session
+One row per visit. A customer can have many sessions across several devices (1:N from Customer).
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| session_id | string | yes | SES-2026-000001 | PK | matches ^SES-\d{4}-\d{6}$, immutable |
+| customer_id | string | yes | existing CUS- id | no | FK to Customer |
+| device_id | string | yes | DEV-000001 | no | 1 to 3 devices per customer |
+| device_type | enum | yes | mobile, desktop, tablet | no | one of the allowed values |
+| started_at | timestamp | yes | UTC | no | at or after customer.created_at |
+| last_activity_at | timestamp | yes | UTC | no | at or after started_at |
+
+Assumption: every session belongs to an identified customer (no anonymous sessions), because consent checks need a known contact.
