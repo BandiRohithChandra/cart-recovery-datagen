@@ -90,3 +90,38 @@ def _channel_history(rng, ids, cust, channel):
         in_at = rand_between(rng, out_at + timedelta(days=1), config.PERIOD_END)
         events.append(_event(ids, cust, channel, "opt_in", in_at, "preference_center"))
     return events
+
+
+    
+
+DEVICE_TYPES = (("mobile", 0.60), ("desktop", 0.30), ("tablet", 0.10))
+DEVICE_COUNT_WEIGHTS = ((1, 0.60), (2, 0.30), (3, 0.10))
+
+
+def generate_sessions(rng, ids, customers, scale):
+    types = [t for t, _ in DEVICE_TYPES]
+    type_w = [w for _, w in DEVICE_TYPES]
+    counts = [c for c, _ in DEVICE_COUNT_WEIGHTS]
+    count_w = [w for _, w in DEVICE_COUNT_WEIGHTS]
+    # mean sessions per customer = 1.6 x carts per customer, so every cart can have its own session
+    max_sessions = max(2, round(3.2 * scale.n_carts / scale.n_customers) - 1)
+    latest_start = config.PERIOD_END - timedelta(days=3)
+
+    sessions = []
+    for cust in customers:
+        devices = [
+            (ids.next("device"), rng.choices(types, type_w)[0])
+            for _ in range(rng.choices(counts, count_w)[0])
+        ]
+        for _ in range(rng.randint(1, max_sessions)):
+            device_id, device_type = rng.choice(devices)
+            started = rand_between(rng, max(cust["created_at"], config.PERIOD_START), latest_start)
+            sessions.append({
+                "session_id": ids.next("session"),
+                "customer_id": cust["customer_id"],
+                "device_id": device_id,
+                "device_type": device_type,
+                "started_at": started,
+                "last_activity_at": started + timedelta(minutes=rng.randint(1, 90)),
+            })
+    return sessions
