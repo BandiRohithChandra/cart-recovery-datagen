@@ -151,3 +151,21 @@ One row per attempt to send a planned message, including attempts that were supp
 Rules:
 - A send is valid only if the consent row in force for that channel at attempted_at is opt_in, and no frequency cap is breached.
 - The injected anomaly "message sent after opt-out" produces a sent row that breaks this rule, and it is recorded in ground_truth.csv.
+
+
+
+## SendEvent
+Supporting table (not in the statement's core entity list). Append-only record of what happens after a send. Attribution reads clicks and opens from here.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| send_event_id | string | yes | SEV-000001 | PK | matches ^SEV-\d{6}$, immutable |
+| send_id | string | yes | existing SEND- id | no | FK to SendAttempt; the attempt's decision must be sent |
+| event_type | enum | yes | delivered, bounced, opened, clicked | no | one of the allowed values |
+| occurred_at | timestamp | yes | UTC | no | at or after the send's attempted_at |
+
+Rules:
+- Suppressed attempts have no SendEvent rows.
+- Each sent attempt has exactly one delivered or bounced event.
+- opened and clicked events are only valid after a delivered event, and never after a bounced one.
+- A send can have several opened or clicked events, and attribution uses the earliest qualifying one.
