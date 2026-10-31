@@ -45,3 +45,22 @@ One row per visit. A customer can have many sessions across several devices (1:N
 | last_activity_at | timestamp | yes | UTC | no | at or after started_at |
 
 Assumption: every session belongs to an identified customer (no anonymous sessions), because consent checks need a known contact.
+
+
+
+## Cart
+One row per cart, holding its current state. The full history lives in CartEvent.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| cart_id | string | yes | CART-2026-000001 | PK | matches ^CART-\d{4}-\d{6}$, immutable |
+| customer_id | string | yes | existing CUS- id | no | FK to Customer |
+| session_id | string | yes | the session that created the cart | no | FK to Session; the session's customer must match |
+| currency | enum | yes | INR, SAR, AED, USD | no | matches the customer's country |
+| status | enum | yes | active, abandoned, recovered, purchased | no | derived from CartEvent history |
+| created_at | timestamp | yes | UTC | no | at or after session.started_at |
+| last_activity_at | timestamp | yes | UTC | no | equals the latest CartEvent time |
+| abandoned_at | timestamp | optional | last_activity_at + 60 minutes | no | null unless abandoned; never after a purchase |
+| cart_total | decimal(12,2) | yes | currency units | no | equals the sum of its CartLine line_total values |
+
+Lifecycle: active -> abandoned -> recovered, or active -> purchased. A cart that is abandoned and later bought after a campaign is "recovered". A cart bought without ever being abandoned is "purchased".
