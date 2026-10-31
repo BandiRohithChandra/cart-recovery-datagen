@@ -95,3 +95,22 @@ Supporting table (not in the statement's core entity list). Append-only history 
 | occurred_at | timestamp | yes | UTC | no | non-decreasing per cart |
 
 Lifecycle rule: after a purchased event, no abandoned event is valid. The injected anomaly "cart considered abandoned after purchase" breaks this on purpose and is recorded in ground_truth.csv.
+
+
+
+## Campaign
+One row per recovery campaign. The rules in force for its sends are stored here for traceability.
+
+| Field | Type | Required | Allowed / format | Unique | Validation |
+|---|---|---|---|---|---|
+| campaign_id | string | yes | CMP-2026-000001 | PK | matches ^CMP-\d{4}-\d{6}$, immutable |
+| name | string | yes | free text | yes | non-empty |
+| status | enum | yes | draft, active, completed, cancelled | no | one of the allowed values |
+| start_date | date | yes | UTC date | no | before or equal to end_date |
+| end_date | date | yes | UTC date | no | after or equal to start_date |
+| abandonment_window_minutes | integer | yes | 60 | no | greater than 0; a cart is only eligible after this much inactivity |
+| attribution_window_days | integer | yes | 7 | no | greater than 0; orders count only within this window after a click or open |
+| max_sends_per_channel_per_24h | integer | yes | 1 | no | greater than 0 |
+| max_sends_per_7d | integer | yes | 3 | no | greater than or equal to max_sends_per_channel_per_24h |
+
+Lifecycle: draft -> active -> completed, or draft/active -> cancelled. SendAttempts may only be created while the campaign is active.
