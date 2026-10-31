@@ -1,0 +1,5 @@
+campaign_id,name,status,start_date,end_date,abandonment_window_minutes,attribution_window_days,max_sends_per_channel_per_24h,max_sends_per_7d
+CMP-2026-000001,Cart Recovery 01,completed,2026-01-01,2026-03-09,60,7,1,3
+CMP-2026-000002,Cart Recovery 02,completed,2026-03-10,2026-05-16,60,7,1,3
+CMP-2026-000003,Cart Recovery 03,completed,2026-05-17,2026-07-23,60,7,1,3
+CMP-2026-000004,Cart Recovery 04,completed,2026-07-24,2026-09-30,60,7,1,3

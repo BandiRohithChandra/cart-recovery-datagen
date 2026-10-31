@@ -1,0 +1,6 @@
+[
+{"campaign_id": "CMP-2026-000001", "name": "Cart Recovery 01", "status": "completed", "start_date": "2026-01-01", "end_date": "2026-03-09", "abandonment_window_minutes": 60, "attribution_window_days": 7, "max_sends_per_channel_per_24h": 1, "max_sends_per_7d": 3},
+{"campaign_id": "CMP-2026-000002", "name": "Cart Recovery 02", "status": "completed", "start_date": "2026-03-10", "end_date": "2026-05-16", "abandonment_window_minutes": 60, "attribution_window_days": 7, "max_sends_per_channel_per_24h": 1, "max_sends_per_7d": 3},
+{"campaign_id": "CMP-2026-000003", "name": "Cart Recovery 03", "status": "completed", "start_date": "2026-05-17", "end_date": "2026-07-23", "abandonment_window_minutes": 60, "attribution_window_days": 7, "max_sends_per_channel_per_24h": 1, "max_sends_per_7d": 3},
+{"campaign_id": "CMP-2026-000004", "name": "Cart Recovery 04", "status": "completed", "start_date": "2026-07-24", "end_date": "2026-09-30", "abandonment_window_minutes": 60, "attribution_window_days": 7, "max_sends_per_channel_per_24h": 1, "max_sends_per_7d": 3}
+]

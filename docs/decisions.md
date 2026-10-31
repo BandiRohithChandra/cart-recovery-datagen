@@ -74,3 +74,5 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 ## 13. Deviations from the statement
 - Added supporting tables CartEvent and SendEvent to keep history.
 - No bridge table, because MessageTemplate already links Campaign and Cart (see erd.md).
+- Exports are CSV, JSON and a SQLite-compatible SQL seed. JSON decimals are strings to keep exact values. Rows are sorted by primary key and files carry no generation time, so output is byte-identical for the same seed.
+- schema.sql enforces primary keys, foreign keys, enums and positive-value checks, but deliberately not one attribution per order, so the injected attribution_double_count row can load. validate.py enforces that rule instead.
