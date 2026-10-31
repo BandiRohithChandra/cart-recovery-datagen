@@ -12,10 +12,10 @@
     "cart_events": 4285,
     "message_templates": 200,
     "send_attempts": 200,
-    "send_events": 121,
+    "send_events": 189,
     "orders": 638,
-    "attributions": 4,
-    "ground_truth": 11
+    "attributions": 2,
+    "ground_truth": 10
   },
   "files_compared": 28,
   "mismatched_files": [],

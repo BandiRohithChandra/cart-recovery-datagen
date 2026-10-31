@@ -128,8 +128,8 @@ One row per planned message for a cart (ID follows MSG-<cart-id>-NN). The templa
 | sequence | integer | yes | 1 to 3 | no | matches the NN suffix; unique per cart |
 | channel | enum | yes | email, sms | no | one of the allowed values |
 | variant | enum | yes | A, B | no | one of the allowed values (A/B test) |
-| template_code | string | yes | e.g. EMAIL_1H_A, EMAIL_24H_B, SMS_72H_A | no | channel in the code matches channel |
-| delay_minutes | integer | yes | 60, 1440, 4320 | no | send is due this long after abandoned_at |
+| template_code | string | yes | e.g. EMAIL_1H_A, EMAIL_26H_B, SMS_72H_A | no | channel in the code matches channel |
+| delay_minutes | integer | yes | 60, 1560, 4320 | no | send is due this long after abandoned_at |
 | subject | string | optional | text | no | required for email, null for sms |
 | body | string | yes | text rendered with first_name and product_name | no | non-empty; SMS at most 160 characters |
 | created_at | timestamp | yes | UTC | no | at or after the cart's abandoned_at |

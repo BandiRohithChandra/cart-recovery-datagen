@@ -89,8 +89,8 @@
       "unexpected": 0
     },
     "frequency_caps": {
-      "violations": 3,
-      "labelled": 3,
+      "violations": 0,
+      "labelled": 0,
       "unexpected": 0
     },
     "no_send_after_purchase": {
@@ -145,16 +145,16 @@
   "row_counts": {
     "customers": 20000,
     "consents": 31779,
-    "sessions": 81704,
+    "sessions": 81744,
     "campaigns": 20,
     "carts": 50000,
     "cart_lines": 98896,
-    "cart_events": 210516,
+    "cart_events": 210556,
     "message_templates": 10000,
     "send_attempts": 10000,
-    "send_events": 5966,
-    "orders": 31660,
-    "attributions": 266,
+    "send_events": 9491,
+    "orders": 31700,
+    "attributions": 357,
     "ground_truth": 197
   },
   "unexpected_examples": []

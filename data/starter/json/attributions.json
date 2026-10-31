@@ -1,6 +1,4 @@
 [
-{"attribution_id": "ATR-2026-000001", "order_id": "ORD-2026-000250", "send_id": "SEND-2026-000056", "send_event_id": "SEV-000028", "touch_type": "click", "lag_minutes": 52, "attributed_revenue": "1208.00"},
-{"attribution_id": "ATR-2026-000002", "order_id": "ORD-2026-000258", "send_id": "SEND-2026-000056", "send_event_id": "SEV-000028", "touch_type": "click", "lag_minutes": 6500, "attributed_revenue": "399.00"},
-{"attribution_id": "ATR-2026-000003", "order_id": "ORD-2026-000250", "send_id": "SEND-2026-000040", "send_event_id": "SEV-000018", "touch_type": "open", "lag_minutes": 40967, "attributed_revenue": "1208.00"},
-{"attribution_id": "ATR-2026-000004", "order_id": "ORD-2026-000258", "send_id": "SEND-2026-000049", "send_event_id": "SEV-000024", "touch_type": "open", "lag_minutes": 20624, "attributed_revenue": "399.00"}
+{"attribution_id": "ATR-2026-000001", "order_id": "ORD-2026-000368", "send_id": "SEND-2026-000085", "send_event_id": "SEV-000077", "touch_type": "click", "lag_minutes": 75, "attributed_revenue": "572.80"},
+{"attribution_id": "ATR-2026-000002", "order_id": "ORD-2026-000368", "send_id": "SEND-2026-000008", "send_event_id": "SEV-000006", "touch_type": "open", "lag_minutes": 242130, "attributed_revenue": "572.80"}
 ]

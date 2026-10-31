@@ -38,6 +38,6 @@ MAX_SENDS_PER_7D = 3
 # Message sequence: (sequence, channel, delay_minutes)
 MESSAGE_SEQUENCE = (
     (1, "email", 60),
-    (2, "email", 1440),
+    (2, "email", 1560),
     (3, "sms", 4320),
 )

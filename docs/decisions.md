@@ -35,7 +35,8 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 - An attempt that would breach a cap is suppressed with frequency_cap_24h or frequency_cap_7d.
 
 ## 7. Campaign sequence
-- Up to 3 messages per abandoned cart: email at +60 minutes, email at +24 hours, SMS at +72 hours.
+- Up to 3 messages per abandoned cart: email at +60 minutes, email at +26 hours, SMS at +72 hours.
+- The second email is sent 26 hours after abandonment (25 hours after the first), so it does not collide with the 1-email-per-24-hours cap.
 - Subject and body variants A and B are assigned deterministically from the seed.
 - A pending message is suppressed with purchased_before_send if the cart is purchased before its scheduled time.
 
@@ -65,6 +66,8 @@ Each item below fills a gap in the problem statement or fixes a rule. Code, vali
 4. stale_cart_total: a quantity updated without recomputing the cart total.
 - Each anomaly touches only its target rows and is recorded in ground_truth.csv, which is never used as an input to generation or validation of features.
 - Anomaly counts: 3 per type in the starter set and 50 per type in the full set. An injected attribution_double_count row may also break the 7-day window or same-customer rule, because it is a deliberately wrong row. ground_truth is a separate output and is never read by any generator or feature step.
+ The attribution_double_count count is limited by the number of orders eligible for a cross-campaign duplicate, so it can be lower (1 on starter, 47 on full).
+
 
 ## 12. ID conventions
 - Given: CUS-000001, CART-2026-000001, CMP-2026-000001, MSG-<cart-id>-01, SEND-2026-000001, ORD-2026-000001.

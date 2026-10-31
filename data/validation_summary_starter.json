@@ -89,8 +89,8 @@
       "unexpected": 0
     },
     "frequency_caps": {
-      "violations": 1,
-      "labelled": 1,
+      "violations": 0,
+      "labelled": 0,
       "unexpected": 0
     },
     "no_send_after_purchase": {
@@ -99,13 +99,13 @@
       "unexpected": 0
     },
     "attribution_unique_per_order": {
-      "violations": 2,
-      "labelled": 2,
+      "violations": 1,
+      "labelled": 1,
       "unexpected": 0
     },
     "attribution_touch_rules": {
-      "violations": 4,
-      "labelled": 4,
+      "violations": 2,
+      "labelled": 2,
       "unexpected": 0
     },
     "attribution_matches_last_touch": {
@@ -134,8 +134,8 @@
       "detected": 3
     },
     "attribution_double_count": {
-      "injected": 2,
-      "detected": 2
+      "injected": 1,
+      "detected": 1
     },
     "stale_cart_total": {
       "injected": 3,
@@ -152,10 +152,10 @@
     "cart_events": 4285,
     "message_templates": 200,
     "send_attempts": 200,
-    "send_events": 121,
+    "send_events": 189,
     "orders": 638,
-    "attributions": 4,
-    "ground_truth": 11
+    "attributions": 2,
+    "ground_truth": 10
   },
   "unexpected_examples": []
 }

@@ -21,7 +21,7 @@ Seed: 20261022. Result: **PASS**
 | abandonment_rule | 0 | 0 | 0 |
 | send_decision_consistency | 0 | 0 | 0 |
 | send_consent_in_force | 50 | 50 | 0 |
-| frequency_caps | 3 | 3 | 0 |
+| frequency_caps | 0 | 0 | 0 |
 | no_send_after_purchase | 0 | 0 | 0 |
 | attribution_unique_per_order | 47 | 47 | 0 |
 | attribution_touch_rules | 93 | 93 | 0 |
@@ -44,14 +44,14 @@ Seed: 20261022. Result: **PASS**
 |---|---:|
 | customers | 20000 |
 | consents | 31779 |
-| sessions | 81704 |
+| sessions | 81744 |
 | campaigns | 20 |
 | carts | 50000 |
 | cart_lines | 98896 |
-| cart_events | 210516 |
+| cart_events | 210556 |
 | message_templates | 10000 |
 | send_attempts | 10000 |
-| send_events | 5966 |
-| orders | 31660 |
-| attributions | 266 |
+| send_events | 9491 |
+| orders | 31700 |
+| attributions | 357 |
 | ground_truth | 197 |

@@ -5,7 +5,7 @@ from datetime import timedelta
 import config
 
 PERIOD_DAYS = (config.PERIOD_END.date() - config.PERIOD_START.date()).days + 1
-LABELS = {1: "1H", 2: "24H", 3: "72H"}
+LABELS = {1: "1H", 2: "26H", 3: "72H"}
 
 SUBJECTS = {
     "A": "{first_name}, you left something in your cart",

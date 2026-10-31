@@ -21,10 +21,10 @@ Seed: 20261022. Result: **PASS**
 | abandonment_rule | 0 | 0 | 0 |
 | send_decision_consistency | 0 | 0 | 0 |
 | send_consent_in_force | 3 | 3 | 0 |
-| frequency_caps | 1 | 1 | 0 |
+| frequency_caps | 0 | 0 | 0 |
 | no_send_after_purchase | 0 | 0 | 0 |
-| attribution_unique_per_order | 2 | 2 | 0 |
-| attribution_touch_rules | 4 | 4 | 0 |
+| attribution_unique_per_order | 1 | 1 | 0 |
+| attribution_touch_rules | 2 | 2 | 0 |
 | attribution_matches_last_touch | 0 | 0 | 0 |
 | attribution_revenue_reconciles | 0 | 0 | 0 |
 | attribution_counts_reconcile | 1 | 1 | 0 |
@@ -35,7 +35,7 @@ Seed: 20261022. Result: **PASS**
 |---|---:|---:|
 | message_after_opt_out | 3 | 3 |
 | abandoned_after_purchase | 3 | 3 |
-| attribution_double_count | 2 | 2 |
+| attribution_double_count | 1 | 1 |
 | stale_cart_total | 3 | 3 |
 
 ## Row counts
@@ -51,7 +51,7 @@ Seed: 20261022. Result: **PASS**
 | cart_events | 4285 |
 | message_templates | 200 |
 | send_attempts | 200 |
-| send_events | 121 |
+| send_events | 189 |
 | orders | 638 |
-| attributions | 4 |
-| ground_truth | 11 |
+| attributions | 2 |
+| ground_truth | 10 |

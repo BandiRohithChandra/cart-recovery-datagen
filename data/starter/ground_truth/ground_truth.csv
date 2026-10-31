@@ -1,12 +1,11 @@
 ground_truth_id,issue_type,table_name,record_id,related_id,expected_decision,detail
-GT-000001,message_after_opt_out,send_attempts,SEND-2026-000031,CON-000069,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
-GT-000002,message_after_opt_out,send_attempts,SEND-2026-000032,CON-000069,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
-GT-000003,message_after_opt_out,send_attempts,SEND-2026-000112,CON-000487,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
-GT-000004,abandoned_after_purchase,cart_events,CEV-004283,CART-2026-000643,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
-GT-000005,abandoned_after_purchase,cart_events,CEV-004284,CART-2026-000712,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
-GT-000006,abandoned_after_purchase,cart_events,CEV-004285,CART-2026-000974,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
-GT-000007,attribution_double_count,attributions,ATR-2026-000003,ORD-2026-000250,one attribution row per order,Order credited to a second campaign; revenue counted twice
-GT-000008,attribution_double_count,attributions,ATR-2026-000004,ORD-2026-000258,one attribution row per order,Order credited to a second campaign; revenue counted twice
-GT-000009,stale_cart_total,carts,CART-2026-000086,CEV-000261,cart_total = 2913.00,cart_total still reflects the quantity before the update
-GT-000010,stale_cart_total,carts,CART-2026-000175,CEV-000550,cart_total = 2097.00,cart_total still reflects the quantity before the update
-GT-000011,stale_cart_total,carts,CART-2026-000454,CEV-001471,cart_total = 60.60,cart_total still reflects the quantity before the update
+GT-000001,message_after_opt_out,send_attempts,SEND-2026-000032,CON-000069,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000002,message_after_opt_out,send_attempts,SEND-2026-000112,CON-000487,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000003,message_after_opt_out,send_attempts,SEND-2026-000113,CON-000487,suppressed (opted_out),Message sent although the opt-out in force was the consent row checked
+GT-000004,abandoned_after_purchase,cart_events,CEV-004283,CART-2026-000415,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000005,abandoned_after_purchase,cart_events,CEV-004284,CART-2026-000457,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000006,abandoned_after_purchase,cart_events,CEV-004285,CART-2026-000937,no abandoned event after a purchased event,Abandoned event recorded after the cart was purchased
+GT-000007,attribution_double_count,attributions,ATR-2026-000002,ORD-2026-000368,one attribution row per order,Order credited to a second campaign; revenue counted twice
+GT-000008,stale_cart_total,carts,CART-2026-000092,CEV-000277,cart_total = 87.60,cart_total still reflects the quantity before the update
+GT-000009,stale_cart_total,carts,CART-2026-000228,CEV-000722,cart_total = 217.86,cart_total still reflects the quantity before the update
+GT-000010,stale_cart_total,carts,CART-2026-000744,CEV-002400,cart_total = 3567.00,cart_total still reflects the quantity before the update

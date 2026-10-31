@@ -1,0 +1,103 @@
+{
+  "scale": "starter",
+  "funnel": {
+    "carts": 1000,
+    "abandoned_carts": 400,
+    "abandoned_pct": 40.0,
+    "recovered_carts": 38,
+    "recovery_rate_pct": 9.5
+  },
+  "sends": {
+    "attempts": 200,
+    "sent": 152,
+    "suppressed": {
+      "no_consent_record": 45,
+      "opted_out": 1,
+      "purchased_before_send": 2
+    }
+  },
+  "by_channel_variant": {
+    "email_A": {
+      "attempts": 74,
+      "sent": 71,
+      "delivered": 70,
+      "bounced": 1,
+      "opened": 14,
+      "clicked": 3,
+      "attributed_orders": 1,
+      "delivery_rate_pct": 98.59,
+      "open_rate_pct": 20.0,
+      "click_rate_pct": 4.29,
+      "attributed_conversion_pct": 1.41
+    },
+    "email_B": {
+      "attempts": 60,
+      "sent": 49,
+      "delivered": 49,
+      "bounced": 0,
+      "opened": 11,
+      "clicked": 6,
+      "attributed_orders": 0,
+      "delivery_rate_pct": 100.0,
+      "open_rate_pct": 22.45,
+      "click_rate_pct": 12.24,
+      "attributed_conversion_pct": 0.0
+    },
+    "sms_A": {
+      "attempts": 36,
+      "sent": 18,
+      "delivered": 18,
+      "bounced": 0,
+      "opened": 0,
+      "clicked": 2,
+      "attributed_orders": 0,
+      "delivery_rate_pct": 100.0,
+      "open_rate_pct": 0.0,
+      "click_rate_pct": 11.11,
+      "attributed_conversion_pct": 0.0
+    },
+    "sms_B": {
+      "attempts": 30,
+      "sent": 14,
+      "delivered": 14,
+      "bounced": 0,
+      "opened": 0,
+      "clicked": 1,
+      "attributed_orders": 0,
+      "delivery_rate_pct": 100.0,
+      "open_rate_pct": 0.0,
+      "click_rate_pct": 7.14,
+      "attributed_conversion_pct": 0.0
+    }
+  },
+  "revenue": {
+    "AED": {
+      "placed_revenue": "10076.96",
+      "attributed_revenue": "0",
+      "attributed_share_pct": 0.0
+    },
+    "INR": {
+      "placed_revenue": "895011.00",
+      "attributed_revenue": "0",
+      "attributed_share_pct": 0.0
+    },
+    "SAR": {
+      "placed_revenue": "18061.14",
+      "attributed_revenue": "572.80",
+      "attributed_share_pct": 3.17
+    },
+    "USD": {
+      "placed_revenue": "2421.63",
+      "attributed_revenue": "0",
+      "attributed_share_pct": 0.0
+    }
+  },
+  "reconciliation": {
+    "placed_orders": 628,
+    "attributed_orders": 1,
+    "attribution_rows": 2,
+    "extra_rows_excluded": 1,
+    "recovered_carts_without_attribution": 37,
+    "attributed_never_exceeds_placed": true
+  }
+}
